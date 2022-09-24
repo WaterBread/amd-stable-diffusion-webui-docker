@@ -9,5 +9,5 @@ services:
       - "/dev/dri:/dev/dri"
       - "/dev/kfd:/dev/kfd"
     environment:
-      HSA_OVERRIDE_GFX_VERSION: "10.3.0"
+      HSA_OVERRIDE_GFX_VERSION: "10.3.0" # https://stackoverflow.com/questions/73575955/pytorch-hiperrornobinaryforgpu-unable-to-find-code-object-for-all-current-devi
 
