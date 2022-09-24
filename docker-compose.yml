@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  web_ui:
+    network_mode: host
+    build: .
+    working_dir: /opt/stable-diffusion-webui
+    command: "python webui.py"
+    devices:
+      - "/dev/dri:/dev/dri"
+      - "/dev/kfd:/dev/kfd"
+    environment:
+      HSA_OVERRIDE_GFX_VERSION: "10.3.0"
+
